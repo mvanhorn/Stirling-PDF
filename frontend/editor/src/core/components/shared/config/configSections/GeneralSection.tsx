@@ -594,10 +594,16 @@ const GeneralSection: React.FC<GeneralSectionProps> = ({
           >
             <div style={{ flex: 1, minWidth: 0 }}>
               <Text fw={500} size="sm">
-                Hide files sidebar by default
+                {t(
+                  "settings.general.hideFilesSidebarByDefault",
+                  "Hide files sidebar by default",
+                )}
               </Text>
               <Text size="xs" c="dimmed" mt={4}>
-                Start with the files sidebar collapsed when the app opens.
+                {t(
+                  "settings.general.hideFilesSidebarByDefaultDescription",
+                  "Start with the files sidebar collapsed when the app opens.",
+                )}
               </Text>
             </div>
             <Switch
